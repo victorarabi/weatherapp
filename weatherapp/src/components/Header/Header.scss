@@ -1,0 +1,10 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+
+//header component styling
+.header {
+  max-width: 63.75rem;
+  margin: auto;
+}
