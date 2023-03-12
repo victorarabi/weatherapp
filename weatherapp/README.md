@@ -8,7 +8,7 @@
 
 # Weather App
 
-![Personal Assistant Logo][site-logo]
+<!-- ![Personal Assistant Logo][site-logo] -->
 
 <!-- TABLE OF CONTENTS -->
 <details>
