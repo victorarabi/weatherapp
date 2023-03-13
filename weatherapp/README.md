@@ -121,6 +121,8 @@ Project Link:
 Links and guides that helped contribute to this project
 
 <!-- https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx -->
+<!-- https://tintef.github.io/react-google-places-autocomplete/ -->
+<!-- https://developers.google.com/maps/documentation/javascript/place-autocomplete -->
 
 - [Open Weather API](https://openweathermap.org/api)
 - [GitHub Pages](https://pages.github.com)
