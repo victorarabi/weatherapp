@@ -9,6 +9,7 @@ const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 export default function CurrentWeather({
   lat,
   lng,
+  isLoading,
   currentWeather,
   setCurrentWeather,
 }) {
@@ -23,7 +24,7 @@ export default function CurrentWeather({
       .catch((err) => console.log(err));
   }, [setCurrentWeather, url]);
   //checks if data has been fetched, if state is empty renders nothing
-  if (!currentWeather) {
+  if (isLoading) {
     return null;
   }
   return (
