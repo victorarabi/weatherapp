@@ -14,7 +14,7 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/weatherdata/:lat/:lng">
+          <Route path="/weatherdata/:lat/:lng/:location">
             <WeatherData />
           </Route>
         </Switch>

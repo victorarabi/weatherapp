@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { geocodeByPlaceId } from 'react-google-places-autocomplete';
 import './SearchCard.scss';
@@ -21,6 +20,7 @@ export default function SearchCard() {
         .then((results) => {
           //if valid locaiton is selected, geocode state updates with lat, lng object
           setGeocode({
+            location: results[0].formatted_address,
             lat: results[0].geometry.location.lat(),
             lng: results[0].geometry.location.lng(),
           });
@@ -33,8 +33,10 @@ export default function SearchCard() {
       alert('please select a valid location');
       return;
     }
+
     window.location.href =
-      CLIENT_URL + `/weatherdata/${geocode.lat}/${geocode.lng}`;
+      CLIENT_URL +
+      `/weatherdata/${geocode.lat}/${geocode.lng}/${geocode.location}`;
   }
   return (
     <article className="search-card">
