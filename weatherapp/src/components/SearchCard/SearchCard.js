@@ -1,15 +1,11 @@
 import { useRef, useEffect } from 'react';
-import useScript from '../../hooks/useScript';
 import './SearchCard.scss';
 
-//API key
+//Google API key
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-const url = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&libraries=places&callback=initMap`;
 
 //search card component
 export default function SearchCard() {
-  //useScript to Load google places api
-  useScript(url);
   //ref declaration
   const autoCompleteRef = useRef();
   const inputRef = useRef();
@@ -37,6 +33,9 @@ export default function SearchCard() {
           Search location
         </label>
         <input className="search-card__input" id="location" ref={inputRef} />
+        <button className="searchCard__submit-btn" onClick={handleSubmit}>
+          Search
+        </button>
       </div>
     </article>
   );
