@@ -120,6 +120,8 @@ Project Link:
 
 Links and guides that helped contribute to this project
 
+<!-- https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx -->
+
 - [Open Weather API](https://openweathermap.org/api)
 - [GitHub Pages](https://pages.github.com)
 - [Markdown badges](https://ileriayo.github.io/markdown-badges/)
