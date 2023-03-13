@@ -2,3 +2,9 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/colors' as *;
+
+.weather-data {
+  width: 63.75rem;
+  margin: auto;
+  padding: 0 1.5rem 1rem;
+}
