@@ -3,11 +3,12 @@ import { useParams } from 'react-router-dom';
 import NotFound from '../../components/NotFound/NotFound';
 import ContentContainer from '../../components/ContentContainer/ContentContainer';
 import CurrentWeather from '../../components/CurrentWeather/CurrentWeather';
+import FiveDayForecast from '../../components/FiveDayForecast/FiveDayForecast';
 import './WeatherData.scss';
 
 //Weather Data component
 export default function WeatherData() {
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecastWeather, setForecastWeather] = useState(null);
   const { location, lat, lng } = useParams();
@@ -40,6 +41,13 @@ export default function WeatherData() {
           lng={lng}
           currentWeather={currentWeather}
           setCurrentWeather={setCurrentWeather}
+        />
+        <FiveDayForecast
+          lat={lat}
+          lng={lng}
+          currentWeather={currentWeather}
+          forecastWeather={forecastWeather}
+          setForecastWeather={setForecastWeather}
         />
       </section>
     </ContentContainer>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 import './CurrentWeather.scss';
 
@@ -6,7 +6,12 @@ import './CurrentWeather.scss';
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 //currentWeather component
-export default function ({ lat, lng, currentWeather, setCurrentWeather }) {
+export default function CurrentWeather({
+  lat,
+  lng,
+  currentWeather,
+  setCurrentWeather,
+}) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`;
   useEffect(() => {
     axios
@@ -16,7 +21,8 @@ export default function ({ lat, lng, currentWeather, setCurrentWeather }) {
         console.log(response.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [setCurrentWeather, url]);
+  //checks if data has been fetched, if state is empty renders nothing
   if (!currentWeather) {
     return null;
   }
