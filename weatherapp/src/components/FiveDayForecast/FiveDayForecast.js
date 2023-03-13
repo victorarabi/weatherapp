@@ -10,6 +10,7 @@ export default function FiveDayForecast({
   lat,
   lng,
   isLoading,
+  currentWeather,
   forecastWeather,
   setForecastWeather,
 }) {
@@ -23,7 +24,6 @@ export default function FiveDayForecast({
       .get(url)
       .then((response) => {
         setForecastWeather(response.data);
-        console.log(response.data);
       })
       .catch((err) => console.log(err));
   }, [setForecastWeather, url, currentWeather]);

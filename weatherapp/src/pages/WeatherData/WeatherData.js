@@ -19,7 +19,7 @@ export default function WeatherData() {
     } else {
       setIsLoading(false);
     }
-  });
+  }, [isLoading, currentWeather, forecastWeather]);
   //verifies if route parameters are not empty and return NotFound if empty
   if (!location || !lat || !lng) {
     return (
@@ -46,6 +46,7 @@ export default function WeatherData() {
             lat={lat}
             lng={lng}
             isLoading={isLoading}
+            currentWeather={currentWeather}
             forecastWeather={forecastWeather}
             setForecastWeather={setForecastWeather}
           />
