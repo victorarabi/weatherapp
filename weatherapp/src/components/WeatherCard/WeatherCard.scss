@@ -1,0 +1,74 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/weather-icons' as *;
+
+.weather-card {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__main {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.3rem;
+    padding: 2rem 0;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    @extend .title;
+  }
+  &__title-time {
+    @extend .label;
+  }
+  &__current-temp {
+    @extend .title;
+  }
+  &__sub-title {
+    @extend .sub-title;
+  }
+  &__icon {
+    font-size: 3rem;
+  }
+  &__details {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0.5rem;
+    padding: 2rem 0;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__data-container {
+    display: flex;
+    align-items: center;
+  }
+  &__label {
+    @extend .label;
+    width: 4.5rem;
+  }
+  &__data {
+    @extend .body;
+  }
+}
