@@ -69,27 +69,27 @@ export default function WeatherCard() {
       case 'freezing rain':
         return <i className="wi wi-snowflake-cold weather-card__icon" />;
       case 'light snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'heavy snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'sleet':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'light shower sleet':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'shower sleet':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'light rain and snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'rain and snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'light shower snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'shower snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'heavy shower snow':
-        return <i className="wi wi-snow-cold weather-card__icon" />;
+        return <i className="wi wi-snow weather-card__icon" />;
       case 'mist':
         return <i className="wi wi-fog weather-card__icon" />;
       case 'smoke':
