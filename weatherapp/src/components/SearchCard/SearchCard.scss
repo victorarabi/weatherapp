@@ -2,3 +2,21 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/colors' as *;
+
+.search-card {
+  &__label {
+    @extend .label;
+  }
+  &__input {
+    @extend .body;
+  }
+  &__btn {
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: $grey;
+    @extend .body;
+    color: $white;
+  }
+}

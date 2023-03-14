@@ -42,9 +42,10 @@ export default function SearchCard() {
     <article className="search-card">
       <div className="search-card__form">
         <label className="search-card__label" htmlFor="location">
-          Search location:
+          Select a location to start using the app:
         </label>
         <GooglePlacesAutocomplete
+          className="search-card__input"
           apiKey={GOOGLE_API_KEY}
           selectProps={{
             value: queryResult,

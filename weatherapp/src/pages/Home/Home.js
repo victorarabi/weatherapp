@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <ContentContainer background="main">
       <section className="home">
-        <p className="home__txt">Welcome to our weather app</p>
+        <p className="home__title">Welcome!</p>
         <SearchCard />
       </section>
     </ContentContainer>

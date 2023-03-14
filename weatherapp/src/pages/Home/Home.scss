@@ -6,6 +6,11 @@
 //header component styling
 .home {
   width: 63.75rem;
+  height: 86vh;
   margin: auto;
-  padding: 0 1.5rem 1rem;
+  padding: 1.5rem 1.5rem 1rem;
+  &__title {
+    @extend .sub-title;
+    padding-bottom: 0.5rem;
+  }
 }

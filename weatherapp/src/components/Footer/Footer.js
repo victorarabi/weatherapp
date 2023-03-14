@@ -5,7 +5,7 @@ import './Footer.scss';
 //footer component
 export default function Footer() {
   return (
-    <ContentContainer background="hf">
+    <ContentContainer background="footer">
       <footer className="footer">
         <h4 className="footer__copyright">©2023 Victor Arabi</h4>
         <a
