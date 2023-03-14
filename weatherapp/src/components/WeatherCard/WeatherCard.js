@@ -10,70 +10,115 @@ export default function WeatherCard() {
   //returns the appropriated weather icon
   function returnWeatherIcon() {
     switch (weather[0].description) {
-      case 'overcast clouds' || 'broken clouds':
-        return <i className="wi wi-cloudy weather-card__icon" />;
-      case 'thunderstorm with light rain' ||
-        'thunderstorm with rain' ||
-        'thunderstorm with heavy rain' ||
-        'light thunderstorm' ||
-        'thunderstorm' ||
-        'heavy thunderstorm' ||
-        'ragged thunderstorm' ||
-        'thunderstorm with light drizzle' ||
-        'thunderstorm with drizzle' ||
-        'thunderstorm with heavy drizzle':
+      case 'thunderstorm with light rain':
         return <i className="wi wi-thunderstorm weather-card__icon" />;
-      case 'light intensity drizzle' ||
-        'drizzle' ||
-        'heavy intensity drizzle' ||
-        'light intensity drizzle rain' ||
-        'drizzle rain' ||
-        'heavy intensity drizzle rain' ||
-        'shower rain and drizzle' ||
-        'heavy shower rain and drizzle' ||
-        'shower drizzle':
+      case 'thunderstorm with rain':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'thunderstorm with heavy rain':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'light thunderstorm':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'thunderstorm':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'heavy thunderstorm':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'ragged thunderstorm':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'thunderstorm with light drizzle':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'thunderstorm with drizzle':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'thunderstorm with heavy drizzle':
+        return <i className="wi wi-thunderstorm weather-card__icon" />;
+      case 'light intensity drizzle':
         return <i className="wi wi-sleet weather-card__icon" />;
-      case 'light rain' ||
-        'moderate rain' ||
-        'heavy intensity rain' ||
-        'very heavy rain' ||
-        'extreme rain' ||
-        'light intensity shower rain' ||
-        'shower rain' ||
-        '	heavy intensity shower rain' ||
-        'ragged shower rain':
+      case 'drizzle':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'heavy intensity drizzle':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'light intensity drizzle rain':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'drizzle rain':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'heavy intensity drizzle rain':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'shower rain and drizzle':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'heavy shower rain and drizzle':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'shower drizzle':
+        return <i className="wi wi-sleet weather-card__icon" />;
+      case 'light rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'moderate rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'heavy intensity rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'very heavy rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'extreme rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'light intensity shower rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'shower rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case '	heavy intensity shower rain':
+        return <i className="wi wi-rain weather-card__icon" />;
+      case 'ragged shower rain':
         return <i className="wi wi-rain weather-card__icon" />;
       case 'freezing rain':
         return <i className="wi wi-snowflake-cold weather-card__icon" />;
-      case 'light snow' ||
-        'snow' ||
-        'heavy snow' ||
-        'sleet' ||
-        'light shower sleet' ||
-        'shower sleet' ||
-        'light rain and snow' ||
-        'rain and snow' ||
-        'light shower snow' ||
-        'shower snow' ||
-        'heavy shower snow':
+      case 'light snow':
         return <i className="wi wi-snow-cold weather-card__icon" />;
-      case 'mist' ||
-        'smoke' ||
-        'haze' ||
-        'sand/dust whirls' ||
-        'fog' ||
-        'sand' ||
-        'dust' ||
-        'volcanic ash' ||
-        'squalls' ||
-        'tornado':
+      case 'snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'heavy snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'sleet':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'light shower sleet':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'shower sleet':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'light rain and snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'rain and snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'light shower snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'shower snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'heavy shower snow':
+        return <i className="wi wi-snow-cold weather-card__icon" />;
+      case 'mist':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'smoke':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'haze':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'sand/dust whirls':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'fog':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'sand':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'dust':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'volcanic ash':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'squalls':
+        return <i className="wi wi-fog weather-card__icon" />;
+      case 'tornado':
         return <i className="wi wi-fog weather-card__icon" />;
       case 'clear sky':
         return <i className="wi wi-day-sunny weather-card__icon" />;
-      case 'few clouds' ||
-        'scattered clouds' ||
-        'broken clouds' ||
-        'overcast clouds':
+      case 'few clouds':
+        return <i className="wi wi-cloudy weather-card__icon" />;
+      case 'scattered clouds':
+        return <i className="wi wi-cloudy weather-card__icon" />;
+      case 'broken clouds':
+        return <i className="wi wi-cloudy weather-card__icon" />;
+      case 'overcast clouds':
         return <i className="wi wi-cloudy weather-card__icon" />;
       default:
         return null;
