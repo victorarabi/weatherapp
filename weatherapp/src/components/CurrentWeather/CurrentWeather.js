@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
+import WeatherCard from '../WeatherCard/WeatherCard';
 import './CurrentWeather.scss';
 
 //Weather api key
@@ -19,7 +20,6 @@ export default function CurrentWeather({
       .get(url)
       .then((response) => {
         setCurrentWeather(response.data);
-        console.log(response.data);
       })
       .catch((err) => console.log(err));
   }, [setCurrentWeather, url]);
@@ -27,12 +27,5 @@ export default function CurrentWeather({
   if (isLoading) {
     return null;
   }
-  return (
-    <article className="current-weather">
-      <h4>temperature</h4>
-      <p>{currentWeather?.main.temp} C</p>
-      <h4>Feels like</h4>
-      <p>{currentWeather?.main.feels_like} C</p>
-    </article>
-  );
+  return <WeatherCard currentWeather={currentWeather} />;
 }

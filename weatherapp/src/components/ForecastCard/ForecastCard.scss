@@ -16,8 +16,9 @@
     flex-direction: column;
   }
   &__row {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
+    margin-bottom: 0.5rem;
     padding: 2rem 1rem;
     border-radius: 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -26,6 +27,7 @@
     align-items: center;
   }
   &__title {
+    padding-bottom: 1rem;
     @extend .title;
   }
   &__sub-title {
@@ -33,10 +35,6 @@
   }
   &__icon {
     font-size: 3rem;
-  }
-  &__column {
-    display: flex;
-    flex-direction: column;
   }
   &__data-container {
     width: 13rem;

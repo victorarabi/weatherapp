@@ -57,8 +57,8 @@ export default function WeatherData() {
   return (
     <ContentContainer background="main">
       <section className="weather-data">
-        <h4>location</h4>
-        <p>{location || 'n/a'}</p>
+        <h4 className="weather-data__sub-title">Location</h4>
+        <p className="weather-data__title">{location}</p>
         <CurrentWeather
           lat={lat}
           lng={lng}

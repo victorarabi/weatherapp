@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
+import ForecastCard from '../ForecastCard/ForecastCard';
 import './FiveDayForecast.scss';
 
 //Weather api key
@@ -31,13 +32,5 @@ export default function FiveDayForecast({
   if (isLoading) {
     return null;
   }
-  return (
-    <article className="forecast">
-      <h1 className="forecast__title">Five day forecast</h1>
-      <h4>temperature</h4>
-      <p>{forecastWeather?.list[0].main.temp} C</p>
-      <h4>Feels like</h4>
-      <p>{forecastWeather?.list[0].main.feels_like} C</p>
-    </article>
-  );
+  return <ForecastCard forecastWeather={forecastWeather} />;
 }

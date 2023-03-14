@@ -1,12 +1,9 @@
 import { DateTime } from 'luxon';
 import './WeatherCard.scss';
 
-//temp
-import currentWeather from '../../assets/data/weather.json';
-
 //Weather card component
-export default function WeatherCard() {
-  const { weather, main, dt, sys } = currentWeather[0];
+export default function WeatherCard({ currentWeather }) {
+  const { weather, main, dt, sys } = currentWeather;
   //returns the appropriated weather icon
   function returnWeatherIcon() {
     switch (weather[0].description) {

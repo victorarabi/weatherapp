@@ -1,11 +1,8 @@
 import { DateTime } from 'luxon';
 import './ForecastCard.scss';
 
-//temp
-import forecastWeather from '../../assets/data/forecast.json';
-
-export default function ForecastCard() {
-  const forecast = forecastWeather[0].list;
+export default function ForecastCard({ forecastWeather }) {
+  const forecast = forecastWeather.list;
   //returns weather icon
   function returnWeatherIcon(description) {
     switch (description) {
@@ -125,7 +122,7 @@ export default function ForecastCard() {
   }
   return (
     <div className="forecast-card">
-      <h2 className="forecast-card__title">Next 5 Days</h2>
+      <h2 className="forecast-card__title">Next 5 Days / 3 Hours Forecast</h2>
       <div className="forecast-card__table">
         {forecast.map((day, i) => {
           const { main, weather } = day;
@@ -135,25 +132,25 @@ export default function ForecastCard() {
           let weekday;
           switch (dt.weekday) {
             case 1:
-              weekday = 'Mon';
+              weekday = 'Monday';
               break;
             case 2:
-              weekday = 'Tue';
+              weekday = 'Tueday';
               break;
             case 3:
-              weekday = 'Wed';
+              weekday = 'Wedday';
               break;
             case 4:
-              weekday = 'Thurs';
+              weekday = 'Thursday';
               break;
             case 5:
-              weekday = 'Fri';
+              weekday = 'Friday';
               break;
             case 6:
-              weekday = 'Sun';
+              weekday = 'Sunday';
               break;
             case 7:
-              weekday = 'Mon';
+              weekday = 'Monday';
               break;
             default:
               break;
@@ -172,7 +169,7 @@ export default function ForecastCard() {
               <div className="forecast-card__data-container">{weatherIcon}</div>
               <div className="forecast-card__data-container">
                 <p className="forecast-card__sub-title">{temp}°C</p>
-                <p className="forecast-card__data">Feel Like {feels_like}°C</p>
+                <p className="forecast-card__data">Feels Like {feels_like}°C</p>
               </div>
               <div className="forecast-card__data-container">
                 <p className="forecast-card__label">{description}</p>

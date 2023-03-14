@@ -7,4 +7,12 @@
   width: 63.75rem;
   margin: auto;
   padding: 0 1.5rem 1rem;
+  &__sub-title {
+    padding-left: 1rem;
+    @extend .sub-title;
+  }
+  &__title {
+    padding-left: 1rem;
+    @extend .title;
+  }
 }
