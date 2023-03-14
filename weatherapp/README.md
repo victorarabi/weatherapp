@@ -8,8 +8,6 @@
 
 # Weather App
 
-<!-- ![Personal Assistant Logo][site-logo] -->
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -54,8 +52,8 @@ This project is made to be a weather application in which an user can search for
 
 ## Features
 
-- Input that autocompletes and suggests a city based of the user input.
-- Display Current weather and 3 hour 5-day forecast.
+- Input that autocompletes and suggests a location in the world based of the user input.
+- Display Current weather and 3 hour / 5-day forecast.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +82,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-3. Change .env-model to .env and copy the settings defined on server installation, step 4.
+3. copy the provided .env file into the root folder of the project
 4. Start the client
 
    ```sh
@@ -97,6 +95,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
+- [ ] Add ability to select units
 - [ ] Add ability to verify user location and display current weather data from the home page
 - [ ] Login features
 - [ ] List of favorite cities and historic data
@@ -110,7 +109,7 @@ To get a local copy up and running follow these simple example steps.
 Victor Arabi - victorarabi@hotmail.com
 
 Project Link:
-[Client](https://github.com/victorarabi/weatherapp)
+[Repo](https://github.com/victorarabi/weatherapp)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,10 +119,8 @@ Project Link:
 
 Links and guides that helped contribute to this project
 
-<!-- https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx -->
-<!-- https://tintef.github.io/react-google-places-autocomplete/ -->
-<!-- https://developers.google.com/maps/documentation/javascript/place-autocomplete -->
-
+- [React Google Places Component](https://tintef.github.io/react-google-places-autocomplete/)
+- [Google Places API](https://developers.google.com/maps/documentation/javascript/place-autocomplete)
 - [Open Weather API](https://openweathermap.org/api)
 - [GitHub Pages](https://pages.github.com)
 - [Markdown badges](https://ileriayo.github.io/markdown-badges/)
@@ -138,14 +135,6 @@ Links and guides that helped contribute to this project
 [site-logo]: /src/assets/images/logo.png
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
-[node.js]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
-[node-url]: https://nodejs.org/en/
-[express.js]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
-[express-url]: https://expressjs.com
-[passport.js]: https://img.shields.io/badge/-Passport.js-lightgrey
-[passport-url]: https://www.passportjs.org
-[google-cloud]: https://img.shields.io/badge/-Google%20Cloud%20API-blue
-[google-cloud-url]: https://cloud.google.com/apis
 [axios]: https://img.shields.io/badge/-Axios-blueviolet
 [axios-url]: https://axios-http.com
 [sass]: https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white
