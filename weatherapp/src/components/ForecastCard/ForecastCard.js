@@ -135,10 +135,10 @@ export default function ForecastCard({ forecastWeather }) {
               weekday = 'Monday';
               break;
             case 2:
-              weekday = 'Tueday';
+              weekday = 'Tuesday';
               break;
             case 3:
-              weekday = 'Wedday';
+              weekday = 'Wednesday';
               break;
             case 4:
               weekday = 'Thursday';
@@ -147,10 +147,10 @@ export default function ForecastCard({ forecastWeather }) {
               weekday = 'Friday';
               break;
             case 6:
-              weekday = 'Sunday';
+              weekday = 'Saturday';
               break;
             case 7:
-              weekday = 'Monday';
+              weekday = 'Sunday';
               break;
             default:
               break;
